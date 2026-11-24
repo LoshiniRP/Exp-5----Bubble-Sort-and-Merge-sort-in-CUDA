@@ -18,10 +18,12 @@ a. Modify the Kernel:
 
 Implement Bubble Sort and Merge Sort using CUDA by assigning each comparison and swap task to individual threads.
 Ensure the kernel checks boundaries to avoid out-of-bounds access, particularly for edge cases.
+
 b. Performance Analysis:
 
 Measure the execution time of the CUDA Bubble Sort with different array sizes (e.g., 512, 1024, 2048 elements).
 Experiment with various block sizes (e.g., 16, 32, 64 threads per block) to analyze their effect on execution time and efficiency.
+
 c. Comparison:
 
 Compare the performance of the CUDA-based Bubble Sort and Merge Sort with a CPU-based Bubble Sort and Merge Sort implementation.
