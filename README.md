@@ -340,4 +340,6 @@ int main() {
 
 
 ## RESULT:
-Thus, the program has been executed using CUDA to implement and compare the performance of parallelized Bubble Sort and Merge Sort algorithms on the GPU against their sequential CPU counterparts, and the output has been verified successfully.
+**RESULT:**
+
+Thus, the Bubble Sort and Merge Sort algorithms were successfully implemented and executed in CUDA across varying array and block sizes (n = 512 with `<<<1, 16>>>**`, n = 1024 with `<<<1, 32>>>**`, and n = 2048 with `<<<1, 64>>>**`). From the comparative analysis, GPU parallelization improved Bubble Sort execution time as block size increased up to the warp size 32 and 64, whereas CPU Merge Sort outperformed the GPU version for smaller datasets due to kernel launch and memory synchronization overheads.
